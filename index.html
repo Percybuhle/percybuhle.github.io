@@ -340,33 +340,7 @@
     text-align:center; margin-top:8px; max-width:132px;
   }
 
-  /* ---- Deck preview (project cover + PDF link) ---- */
-  .deck-preview{
-    display:flex; gap:20px; align-items:center;
-    margin-top:18px; padding-top:18px;
-    border-top:1px dashed var(--line);
-  }
-  @media (max-width:520px){ .deck-preview{ flex-direction:column; align-items:flex-start; } }
-  .deck-thumb{
-    width:150px; height:84px; flex:none;
-    border-radius:6px; overflow:hidden;
-    border:1px solid var(--line-soft);
-    box-shadow:0 4px 14px rgba(22,35,46,0.12);
-  }
-  .deck-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
-  .deck-link-btn{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px; letter-spacing:.02em;
-    text-decoration:none;
-    color:var(--teal);
-    border:1px solid var(--teal);
-    padding:9px 16px; border-radius:3px;
-    display:inline-flex; align-items:center; gap:6px;
-    transition:background .15s ease, color .15s ease;
-    white-space:nowrap;
-  }
-  .deck-link-btn:hover{ background:var(--teal); color:var(--paper); }
-
+  /* ---- Slide gallery ---- */
   .slide-strip{
     display:flex; gap:14px; overflow-x:auto;
     padding:20px 0 6px; margin-top:6px;
@@ -390,6 +364,19 @@
     text-align:center; margin-top:8px; max-width:190px;
   }
   .deck-cta-row{ margin-top:16px; }
+
+  .deck-link-btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px; letter-spacing:.02em;
+    text-decoration:none;
+    color:var(--teal);
+    border:1px solid var(--teal);
+    padding:9px 16px; border-radius:3px;
+    display:inline-flex; align-items:center; gap:6px;
+    transition:background .15s ease, color .15s ease;
+    white-space:nowrap;
+  }
+  .deck-link-btn:hover{ background:var(--teal); color:var(--paper); }
 
   /* ---- Education / certs ---- */
   .edu-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
@@ -486,6 +473,7 @@
     <div class="hero-meta">📍 New Jersey — open to relocation nationwide</div>
     <div class="btn-row">
       <a href="#work" class="btn btn-primary">View my work →</a>
+      <a href="assets/resume/Perseviarance_Mbambo_Resume.pdf" class="btn btn-ghost" download>Download résumé</a>
       <a href="#contact" class="btn btn-ghost">Contact me</a>
     </div>
   </div>
@@ -609,6 +597,21 @@
           <div class="stat-chip">Increased audience engagement</div>
           <div class="stat-chip">Strengthened online presence</div>
         </div>
+        <h4>Screenshots</h4>
+        <div class="shot-strip">
+          <a class="shot-item" href="assets/images/adyh/adyh-facebook-page.jpg" target="_blank" rel="noopener">
+            <div class="shot-frame"><img src="assets/images/adyh/adyh-facebook-page.jpg" alt="African Diaspora Youth Hub Facebook page" loading="lazy"></div>
+            <div class="shot-caption">Facebook page</div>
+          </a>
+          <a class="shot-item" href="assets/images/adyh/adyh-insights-growth.jpg" target="_blank" rel="noopener">
+            <div class="shot-frame"><img src="assets/images/adyh/adyh-insights-growth.jpg" alt="Facebook Insights showing 531% view growth" loading="lazy"></div>
+            <div class="shot-caption">Insights — 531% view growth</div>
+          </a>
+          <a class="shot-item" href="assets/images/adyh/adyh-facebook-content-overview.jpg" target="_blank" rel="noopener">
+            <div class="shot-frame"><img src="assets/images/adyh/adyh-facebook-content-overview.jpg" alt="Facebook content performance by views" loading="lazy"></div>
+            <div class="shot-caption">Top content by views</div>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -641,6 +644,21 @@
               <span class="pill">Marketing Analytics</span>
             </div>
           </div>
+        </div>
+        <h4 style="border-top:1px dashed var(--line); padding-top:18px;">Screenshots</h4>
+        <div class="shot-strip">
+          <a class="shot-item" href="assets/images/kasa/kasa-instagram-profile.jpg" target="_blank" rel="noopener">
+            <div class="shot-frame"><img src="assets/images/kasa/kasa-instagram-profile.jpg" alt="Katz African Student Association Instagram profile" loading="lazy"></div>
+            <div class="shot-caption">Instagram profile</div>
+          </a>
+          <a class="shot-item" href="assets/images/kasa/kasa-insights-dashboard.jpg" target="_blank" rel="noopener">
+            <div class="shot-frame"><img src="assets/images/kasa/kasa-insights-dashboard.jpg" alt="Instagram insights overview" loading="lazy"></div>
+            <div class="shot-caption">Insights overview</div>
+          </a>
+          <a class="shot-item" href="assets/images/kasa/kasa-instagram-content-grid.jpg" target="_blank" rel="noopener">
+            <div class="shot-frame"><img src="assets/images/kasa/kasa-instagram-content-grid.jpg" alt="Katz African Student Association content grid" loading="lazy"></div>
+            <div class="shot-caption">Content grid</div>
+          </a>
         </div>
       </div>
     </div>
@@ -679,6 +697,25 @@
             </div>
           </div>
         </div>
+        <h4 style="border-top:1px dashed var(--line); padding-top:18px;">From the strategy deck</h4>
+        <div class="slide-strip">
+          <a class="slide-item" href="assets/images/kayaan/kayaan-title-slide.jpg" target="_blank" rel="noopener">
+            <div class="slide-frame"><img src="assets/images/kayaan/kayaan-title-slide.jpg" alt="Kayaan Logistics Digital Marketing Strategy title slide" loading="lazy"></div>
+            <div class="slide-caption">Title slide</div>
+          </a>
+          <a class="slide-item" href="assets/images/kayaan/kayaan-market-transformation.jpg" target="_blank" rel="noopener">
+            <div class="slide-frame"><img src="assets/images/kayaan/kayaan-market-transformation.jpg" alt="Market transformation slide with 70%, $940B, 30% stats" loading="lazy"></div>
+            <div class="slide-caption">Market transformation</div>
+          </a>
+          <a class="slide-item" href="assets/images/kayaan/kayaan-paid-media-strategy.jpg" target="_blank" rel="noopener">
+            <div class="slide-frame"><img src="assets/images/kayaan/kayaan-paid-media-strategy.jpg" alt="Paid media strategy slide" loading="lazy"></div>
+            <div class="slide-caption">Paid media strategy</div>
+          </a>
+          <a class="slide-item" href="assets/images/kayaan/kayaan-platform-performance.jpg" target="_blank" rel="noopener">
+            <div class="slide-frame"><img src="assets/images/kayaan/kayaan-platform-performance.jpg" alt="Platform performance analysis bar chart" loading="lazy"></div>
+            <div class="slide-caption">Platform performance analysis</div>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -713,6 +750,21 @@
               <span class="pill">Customer Experience</span>
             </div>
           </div>
+        </div>
+        <h4 style="border-top:1px dashed var(--line); padding-top:18px;">From the strategy deck</h4>
+        <div class="slide-strip">
+          <a class="slide-item" href="assets/images/sephora/sephora-title-slide.jpg" target="_blank" rel="noopener">
+            <div class="slide-frame"><img src="assets/images/sephora/sephora-title-slide.jpg" alt="Sephora CRM strategy title slide: Beyond Beauty" loading="lazy"></div>
+            <div class="slide-caption">Title slide</div>
+          </a>
+          <a class="slide-item" href="assets/images/sephora/sephora-beauty-industry-evolution.jpg" target="_blank" rel="noopener">
+            <div class="slide-frame"><img src="assets/images/sephora/sephora-beauty-industry-evolution.jpg" alt="Beauty industry evolution slide with market stats" loading="lazy"></div>
+            <div class="slide-caption">Beauty industry evolution</div>
+          </a>
+          <a class="slide-item" href="assets/images/sephora/sephora-crm-logic-framework.jpg" target="_blank" rel="noopener">
+            <div class="slide-frame"><img src="assets/images/sephora/sephora-crm-logic-framework.jpg" alt="CRM logic framework slide" loading="lazy"></div>
+            <div class="slide-caption">CRM logic framework</div>
+          </a>
         </div>
       </div>
     </div>
